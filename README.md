@@ -72,10 +72,12 @@ sudo apt-get install libayatana-appindicator3-1   # Debian and Ubuntu
 sudo dnf install libayatana-appindicator-gtk3     # Fedora
 ```
 
-**Unattended desktop**
+**Unattended desktop（无人值守桌面环境）**
 
 FlClash starts the core only after the disclaimer is accepted. Where nobody can click it, such as a container, set
 `FLCLASH_ACCEPT_DISCLAIMER=1` in the app's environment to accept it on first launch.
+
+FlClash 只有在用户接受免责声明后才会启动核心程序。如果运行环境中没有人能够点击确认（例如容器环境），可以在应用的环境变量中设置 `FLCLASH_ACCEPT_DISCLAIMER=1`，以便在首次启动时自动接受免责声明。
 
 ## Usage
 
